@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../Assets/images/logo.png";
 import call from "../../Assets/images/call.png";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Sidebar from "./sidebar";
 import { BiMenuAltRight } from "react-icons/bi";
 
@@ -14,7 +14,6 @@ const Nav = () => {
   ];
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const navigateTo = useNavigate();
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -23,8 +22,6 @@ const Nav = () => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
-
-  const token = localStorage.getItem("token");
 
   return (
     <nav className='w-full p-3'>
@@ -66,7 +63,6 @@ const Nav = () => {
         isSidebarOpen={isSidebarOpen}
         closeSidebar={closeSidebar}
         navItems={navLinks}
-        token={token}
       />
     </nav>
   );

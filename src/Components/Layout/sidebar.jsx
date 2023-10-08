@@ -3,9 +3,8 @@ import { MdOutlineClose } from "react-icons/md";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../Assets/images/logo.png";
 import call from "../../Assets/images/call.png";
-import Btn from "../../Utils/Button/btn";
 
-const Sidebar = ({ isSidebarOpen, closeSidebar, navItems, token }) => {
+const Sidebar = ({ isSidebarOpen, closeSidebar, navItems }) => {
   const navigateTo = useNavigate();
   return (
     <aside

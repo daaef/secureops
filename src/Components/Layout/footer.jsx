@@ -14,7 +14,7 @@ const Footer = () => {
     { img: ln, title: "LinkedIn", link: "" },
   ];
   return (
-    <footer className='bg-black text-gray-200 p-3 py-20'>
+    <footer className='bg-black text-gray-200 p-5 py-10 md:py-20'>
       <div className='mx-auto container grid grid-cols-1 md:grid-cols-3 gap-12'>
         <div>
           <img src={logo} className='w-40' alt='' />
@@ -59,11 +59,10 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className='mx-auto container flex items-center justify-between mt-32 text-gray-400'>
+      <div className='mx-auto container flex  gap-4 flex-col sm:flex-row items-center justify-between mt-32 text-gray-400 text-sm'>
         <h2>© SecureOps Solutions LLC</h2>
         <div className='flex gap-8'>
-          <Link>Privacy Policy</Link>
-          <Link>Terms and Policy</Link>
+          <Link>Privacy Policy</Link>|<Link>Terms and Policy</Link>
         </div>
       </div>
     </footer>

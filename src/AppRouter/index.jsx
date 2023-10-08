@@ -26,6 +26,3 @@ const AppRoutes = () => {
 };
 
 export default AppRoutes;
-{
-  /* <Route path='track/:trackID/' element={<Track />} /> */
-}
