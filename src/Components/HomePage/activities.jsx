@@ -18,10 +18,10 @@ const Activities = () => {
             setting a new standard for excellence in our offerings.
           </p>
         </div>
-        <img src={ai} alt='ai' />
+        <img className='w-full' src={ai} alt='ai' />
       </div>
       <div className='flex flex-col-reverse md:flex-row my-20 gap-8 items-center'>
-        <img src={security} alt='ai' />
+        <img src={security} className='w-full md:w-1/2' alt='ai' />
         <div className='md:w-[50%]'>
           <h2 className='text-5xl font-bold leading-[4rem]'>
             Security structure of DevOps
