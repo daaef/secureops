@@ -24,7 +24,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className='w-full p-3'>
+    <nav className='w-full p-3 py-5'>
       <div className='flex justify-between items-center gap-4 container mx-auto'>
         <Link to='/'>
           <img className='w-28' src={logo} alt='' />

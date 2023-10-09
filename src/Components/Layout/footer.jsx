@@ -59,7 +59,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className='mx-auto container flex  gap-4 flex-col sm:flex-row items-center justify-between mt-32 text-gray-400 text-sm'>
+      <div className='mx-auto container flex  gap-4 flex-col sm:flex-row items-center justify-between mt-20 text-gray-400 text-sm'>
         <h2>© SecureOps Solutions LLC</h2>
         <div className='flex gap-8'>
           <Link>Privacy Policy</Link>|<Link>Terms and Policy</Link>
