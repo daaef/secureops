@@ -4,7 +4,7 @@ import security from "../../Assets/images/security.png";
 
 const Activities = () => {
   return (
-    <div className='p-4 mx-auto max-w-5xl'>
+    <div className='p-4 container mx-auto'>
       <div className='grid mb-20 grid-cols-1 md:grid-cols-2 gap-8 items-center'>
         <div>
           <h2 className='text-5xl font-bold leading-[4rem]'>
