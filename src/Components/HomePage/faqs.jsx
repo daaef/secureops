@@ -4,20 +4,20 @@ import SingleFaq from "./singleFaq";
 const Faqs = () => {
   const faqs = [
     {
-      q: "What should i expect from using this product?",
-      a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      q: "What services do you offer?",
+      a: "Our services include consultancy, cloud migration and optimisation, development and support, DevOps integration, and training.",
     },
     {
-      q: "What should i expect from using this product?",
-      a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      q: "What is your pricing?",
+      a: "Our pricing is project-based. We discuss your needs, evaluate them carefully, and then present a cost-effective budget to you.",
     },
     {
-      q: "What should i expect from using this product?",
-      a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      q: "What is the delivery timeline?",
+      a: "This depends on the project specifications as more complex projects typically take more time to complete. However, there will be a visible timeline with deliverables and milestones.",
     },
     {
-      q: "What should i expect from using this product?",
-      a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      q: "How do we get started?",
+      a: "We’re glad you’ve taken that step to work with us. The next step is to schedule a call with us through this link. This session will help our experts understand what solutions your business needs and how best SecureOps can intervene.",
     },
   ];
   return (

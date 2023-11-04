@@ -7,15 +7,15 @@ const Activities = () => {
     <div className='p-4 container mx-auto'>
       <div className='grid mb-20 grid-cols-1 md:grid-cols-2 gap-8 items-center'>
         <div>
-          <h2 className='text-5xl font-bold leading-[4rem]'>
+          <h2 className='text-5xl font-bold leading-[4rem] text-gray-700'>
             Embracing AI Innovation
           </h2>
-          <p className='mt-5'>
-            With the integration of advanced AI technology into our team, we are
-            elevating our services to a new realm of efficiency and
-            sophistication. Our utilization of cutting-edge technology is geared
-            towards delivering unparalleled results at an unprecedented pace,
-            setting a new standard for excellence in our offerings.
+          <p className='mt-5 text-[#3C3C3C]'>
+            The paradigm is shifting and we are conscious of that fact. Our
+            intelligent SecureOps Team integrates advanced AI technologies into
+            our workflow, elevating our services to a new realm of efficiency.
+            Our goal is to deliver unrivaled results to our clients hence
+            setting a new industry standard.
           </p>
         </div>
         <img className='w-full' src={ai} alt='ai' />
@@ -23,16 +23,14 @@ const Activities = () => {
       <div className='flex flex-col-reverse md:flex-row my-20 gap-8 items-center'>
         <img src={security} className='w-full md:w-1/2' alt='ai' />
         <div className='md:w-[50%]'>
-          <h2 className='text-5xl font-bold leading-[4rem]'>
+          <h2 className='text-5xl font-bold leading-[4rem] text-gray-700'>
             Security structure of DevOps
           </h2>
-          <p className='mt-5'>
-            DevOps Security is a collaborative approach that involves
-            developers, security engineers, and IT operations teams working
-            together to build secure software. By integrating security into the
-            devops pipeline, organizations can reduce risk of security
-            vulnerabilities being introduced into their software and can improve
-            their overall security posture
+          <p className='mt-5 text-[#3C3C3C]'>
+            Your security matters and at SecureOps, we prioritize the security
+            of our clients and use state-of-art technologies to ensure clients’
+            privacy. By integrating efficient security into your business
+            pipeline, we shield you from security vulnerabilities and threats.
           </p>
         </div>
       </div>

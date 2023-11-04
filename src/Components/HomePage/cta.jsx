@@ -7,7 +7,8 @@ const Ctx = () => {
       <div className='mx-auto container sm:grid items-center sm:grid-cols-2'>
         <div>
           <h2 className='text-5xl font-bold leading-[4rem]'>
-            Ready to Secure Your Future with Our Expert Team? Let's Collaborate!
+            Ready to <span className='text-[#669EE5]'>Secure </span> Your Future
+            with Our Expert Team? Let's Collaborate!
           </h2>
         </div>
         <Link
