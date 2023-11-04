@@ -9,7 +9,7 @@ const HomeHero = () => {
     <div className='mx-auto container p-4 md:p-8 rounded-md shadow-2xl shadow-blue-100 mb-10 flex flex-col md:flex-row  md:items-center gap-8 bg-gradient-img text-white'>
       <div>
         <h2 className='text-5xl font-bold leading-[4rem]'>
-          Build Sustatinable Solutions with SecureOps
+          Build Sustainable Solutions with SecureOps
         </h2>
 
         <p className='my-6 text-base md:text-lg font-light'>
