@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const SingleFaq = ({ a, q }) => {
   const [isAnswerShown, setIsAnswerShown] = useState(false);
   return (
-    <div className='mb-4'>
+    <div className='my-4'>
       <h2
         className='flex items-center gap-3 select-none cursor-pointer text-lg'
         onClick={() => setIsAnswerShown(!isAnswerShown)}

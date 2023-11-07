@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import desktop from "../../Assets/images/desktop.png";
 import call from "../../Assets/images/call2.png";
 import hero from "../../Assets/images/hero.png";
 

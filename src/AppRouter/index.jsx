@@ -6,6 +6,7 @@ import Team from "../Pages/Team";
 import About from "../Pages/About";
 import Blog from "../Pages/Blog";
 import LandingPage from "../Pages";
+import Contact from "../Pages/Contact";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
           <Route path='team' element={<Team />} />
           <Route path='about' element={<About />} />
           <Route path='blog' element={<Blog />} />
+          <Route path='contact' element={<Contact />} />
         </Route>
 
         <Route path='*' element={<h2>404</h2>} />

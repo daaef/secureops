@@ -49,7 +49,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar, navItems }) => {
 
       <Link
         className='bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 text-white flex items-center rounded-md p-3 gap-2 text-sm px-6 w-fit'
-        to='login'
+        to='contact'
       >
         <img src={call} alt='call' />
         Contact Us
