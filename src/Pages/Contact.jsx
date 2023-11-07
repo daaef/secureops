@@ -3,6 +3,7 @@ import Faqs from "../Components/HomePage/faqs";
 import Hero from "../Components/Contact/hero";
 import Address from "../Components/Contact/address";
 import ContactForm from "../Components/Contact/contactForm";
+import Ctx from "../Components/HomePage/cta";
 
 const Contact = () => {
   return (
@@ -20,6 +21,7 @@ const Contact = () => {
         <ContactForm />
       </div>
       <Faqs />
+      <Ctx />
     </div>
   );
 };
