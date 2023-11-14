@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Ctx = () => {
   return (
-    <div className='p-8 py-12 -m-4 bg-gradient-img text-white'>
+    <div className='p-8 py-12 bg-gradient-img text-white overflow-hidden'>
       <div className='mx-auto container sm:grid items-center sm:grid-cols-2'>
         <div>
           <h2 className='text-5xl font-bold leading-[4rem]'>
