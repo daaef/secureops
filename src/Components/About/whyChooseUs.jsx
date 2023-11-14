@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
     },
   ];
   return (
-    <div className='my-20 container mx-auto'>
+    <div className='my-20 container mx-auto p-4'>
       <h2 className='font-bold text-3xl text-gray-800 text-center'>
         Our Core Values
       </h2>
