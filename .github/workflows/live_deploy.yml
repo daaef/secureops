@@ -36,8 +36,8 @@ jobs:
         host: 162.240.160.55
         port: 22
         user: root
-        key: ${{ secrets.SERVER_ROOT_KEY }}
-        pass: ${{ secrets.SERVER_ROOT_SSH_KEY }}
+        pass: ${{ secrets.SERVER_ROOT_KEY }}
+        key: ${{ secrets.SERVER_ROOT_SSH_KEY }}
         # rsync -r ./build .
         first_ssh: |-
           cd /usr/share/nginx/html
