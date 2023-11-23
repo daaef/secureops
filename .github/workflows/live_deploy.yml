@@ -40,9 +40,8 @@ jobs:
         key: ${{ secrets.SERVER_ROOT_SSH_KEY }}
         # rsync -r ./build .
         first_ssh: |-
-          cd /usr/share/nginx/html
           rm -rf *
         scp: |-
-            "./build/" => "."
+            "./build/" => "/usr/share/nginx/html"
         last_ssh: |-
           echo "DONE"
