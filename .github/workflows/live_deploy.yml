@@ -29,7 +29,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm install -g yarn
-    - run: yarn run build --if-present
+    - run: yarn run build --if-present -e process.env.CI=false
     - name: ssh-scp-ssh-pipelines
       uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.4
       with:
