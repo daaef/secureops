@@ -7,8 +7,8 @@ const SingleBlog = () => {
   useScrollToTop();
   return (
     <div className='container mx-auto'>
-      <div className='my-20'>
-        <h2 className='text-center text-sky-600 bg-gray-100 rounded-3xl p-3 w-fit mx-auto px-6'>
+      <div className='my-20 p-4'>
+        <h2 className='text-center text-sky-600 bg-gray-100 rounded-3xl p-3 w-fit mx-auto px-6 whitespace-nowrap'>
           DevOps Insight
         </h2>
         <h2 className='font-bold text-gray-700 text-3xl my-4 text-center'>
