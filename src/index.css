@@ -32,6 +32,38 @@ body {
     ),
     url(Assets/images/grad-bg.png);
 }
+/* SingleMember.css */
+
+.hidden-details {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible-details {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Rest of your styles for .details-container can remain unchanged */
+
+.relative .details-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
 
 @layer components {
   .bg-gradient-custom {
