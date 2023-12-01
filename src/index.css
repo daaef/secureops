@@ -19,18 +19,21 @@ body {
   right: 0;
   bottom: 0;
   background-image: url(Assets/images/grad-bg.png);
-  filter: blur(10px); /* Adjust the blur radius as needed */
-  z-index: -1; /* Place the pseudo-element below content */
+  filter: blur(10px);
+  z-index: -1;
 }
 
 .bg-gradient-img {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(5, 5, 5, 1) 0%,
-      rgba(14, 14, 14, 0.658) 50%,
-      rgba(58, 58, 58, 0.465) 100%
-    ),
-    url(Assets/images/grad-bg.png);
+  background-image: url(Assets/images/grad-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bg-headline-img {
+  background-image: url(Assets/images/headline-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /* SingleMember.css */
 
@@ -63,6 +66,15 @@ body {
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
+}
+
+.overflowX {
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.overflowX::-webkit-scrollbar {
+  display: none;
 }
 
 @layer components {

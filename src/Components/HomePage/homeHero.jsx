@@ -5,7 +5,7 @@ import hero from "../../Assets/images/hero.png";
 
 const HomeHero = () => {
   return (
-    <div className='mx-auto container p-4 md:p-8 rounded-md shadow-2xl shadow-blue-100 mb-10 flex flex-col md:flex-row  md:items-center gap-8 bg-gradient-img text-white'>
+    <div className='mx-auto container p-4 md:p-8 rounded-md shadow-2xl shadow-blue-100 grid grid-cols-1 md:grid-cols-2 md:items-center gap-8 bg-gradient-img text-white'>
       <div>
         <h2 className='text-5xl font-bold leading-[4rem]'>
           Build Sustainable Solutions with SecureOps
@@ -23,7 +23,9 @@ const HomeHero = () => {
           Book a free call
         </Link>
       </div>
-      <img className='w-96 rounded-xl' src={hero} alt='hero' />
+      <div>
+        <img className='w-full rounded-xl' src={hero} alt='hero' />
+      </div>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Members = () => {
     },
     {
       name: "Benson Olowomuke",
-      title: "CEO/Co-Founder",
+      title: "CFO/Co-Founder",
       details: {
         p1: "Benson is a serial tech entrepreneur and a co-founder of SecureOps Solutions LLC with over 22 years in the technology industry. His experience spans across Enterprise and Service Providers Network Systems Infrastructure Designs, Testing and Security Operations.",
         p2: "As an Enterprise Architect, he has consulted for several U.S public and private organizations, and he holds several industry certifications including but not limited to AWS, Microsoft, Comptia, Aviatrix, and an active CCIE.",
@@ -30,7 +30,7 @@ const Members = () => {
     },
     {
       name: "Adeyinka Popoola",
-      title: "Software Architects",
+      title: "Software Architect",
       details: {
         p1: "Popoola Adeyinka is a software developer with a strong focus on backend technologies such as Python and Node.js. His journey in this field spans five years, during which he has wholeheartedly devoted himself to crafting efficient and dependable solutions that drive the core of web applications.",
         p2: "Beyond the confines of work, Adeyinka relishes tackling intricate coding challenges, actively contributing to open-source projects, and continually expanding his knowledge in the ever-evolving realm of technology.",
@@ -57,7 +57,7 @@ const Members = () => {
     },
     {
       name: "Robinson Simon",
-      title: "Software Architects",
+      title: "Software Architect",
       details: {
         p1: "Simon is an experienced frontend developer with a proven track record of over three years, specializing in the creation of interactive and visually captivating web applications. His unwavering commitment to delivering seamless user experiences has been the cornerstone of his career in web development. ",
         p2: "His relentless pursuit of staying at the forefront of the rapidly evolving frontend landscape has compelled him to adopt and master the latest technologies and industry best practices. Simon thrives in cross-functional team environments, where he excels at transforming conceptual ideas into meticulously crafted, user-centric solutions.",
@@ -66,10 +66,10 @@ const Members = () => {
     },
     {
       name: "Micheal Abel",
-      title: "Software Architects",
+      title: "Software Architect",
       details: {
-        p1: "Popoola Adeyinka is a software developer with a strong focus on backend technologies such as Python and Node.js. His journey in this field spans five years, during which he has wholeheartedly devoted himself to crafting efficient and dependable solutions that drive the core of web applications. ",
-        p2: "Beyond the confines of work, Adeyinka relishes tackling intricate coding challenges, actively contributing to open-source projects, and continually expanding his knowledge in the ever-evolving realm of technology.",
+        p1: "Micheal is a Java Spring Boot developer with six years of experience in developing web applications using the Spring framework. He has strong knowledge of Java, Spring Boot, Spring MVC, Spring Data, Spring Security, Hibernate, RESTful APIs, microservices architecture, devops, flutter and reactjs.",
+        p2: "Micheal has also worked with various databases, such as MySQL, MongoDB, redis and cosmosdb. He’s proficient in using tools like Gradle, Git,GitHub actions, Docker, and Kubernetes for building, testing, and deploying applications. Micheal is very proficient in javascript, typescript, react and flutter.",
       },
       img: abel,
     },
