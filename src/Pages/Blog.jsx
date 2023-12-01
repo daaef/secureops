@@ -11,9 +11,9 @@ const Blog = () => {
       <Hero />
       <Headline />
       <Categories />
-      <NewsContainer category='Latest Post' />
-      <NewsContainer category='DevOps Insights' />
-      <NewsContainer category='Security Tips' />
+      <NewsContainer showMore={true} category='Latest Post' />
+      <NewsContainer showMore={true} category='DevOps Insights' />
+      <NewsContainer showMore={true} category='Security Tips' />
       <Ctx />
     </div>
   );
