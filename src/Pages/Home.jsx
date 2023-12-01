@@ -6,8 +6,10 @@ import Services from "../Components/HomePage/services";
 import Testimonials from "../Components/HomePage/testimonials";
 import Faqs from "../Components/HomePage/faqs";
 import Ctx from "../Components/HomePage/cta";
+import useScrollToTop from "../hooks/scrollToTop";
 
 const Home = () => {
+  useScrollToTop();
   return (
     <div className='p-4'>
       <HomeHero />

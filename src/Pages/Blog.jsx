@@ -4,8 +4,10 @@ import Ctx from "../Components/HomePage/cta";
 import Headline from "../Components/Blog/headline";
 import Categories from "../Components/Blog/categories";
 import NewsContainer from "../Components/Blog/newsContainer";
+import useScrollToTop from "../hooks/scrollToTop";
 
 const Blog = () => {
+  useScrollToTop();
   return (
     <div>
       <Hero />

@@ -4,8 +4,10 @@ import Hero from "../Components/Contact/hero";
 import Address from "../Components/Contact/address";
 import ContactForm from "../Components/Contact/contactForm";
 import Ctx from "../Components/HomePage/cta";
+import useScrollToTop from "../hooks/scrollToTop";
 
 const Contact = () => {
+  useScrollToTop();
   return (
     <div>
       <Hero />

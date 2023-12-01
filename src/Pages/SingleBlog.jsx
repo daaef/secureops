@@ -1,8 +1,10 @@
 import React from "react";
 import news from "../Assets/images/news.png";
 import NewsContainer from "../Components/Blog/newsContainer";
+import useScrollToTop from "../hooks/scrollToTop";
 
 const SingleBlog = () => {
+  useScrollToTop();
   return (
     <div className='container mx-auto'>
       <div className='my-20'>
