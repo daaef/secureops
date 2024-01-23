@@ -46,7 +46,7 @@ jobs:
         scp: |-
             "./build/" => "/usr/share/nginx/html"
         last_ssh: |-
-          cd mobil-haul-frontend
+          cd secureops_website
           sudo docker stop secureops_website || true
           sudo docker rm secureops_website || true
           sudo docker rmi secureops_website || true
