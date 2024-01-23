@@ -37,7 +37,7 @@ jobs:
         port: 22
         user: root
         pass: ${{ secrets.SERVER_ROOT_KEY }}
-        key: ${{ secrets.SERVER_ROOT_SSH_KEY }}
+#        key: ${{ secrets.SERVER_ROOT_SSH_KEY }}
         connect_timeout: 24000
         # rsync -r ./build .
         first_ssh: |-
@@ -45,7 +45,7 @@ jobs:
           mkdir -p secureops_website
         scp: |-
             "./build/" => "/usr/share/nginx/html"
-          last_ssh: |-
+        last_ssh: |-
           cd mobil-haul-frontend
           sudo docker stop secureops_website || true
           sudo docker rm secureops_website || true
