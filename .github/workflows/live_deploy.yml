@@ -44,7 +44,9 @@ jobs:
           rm -rf secureops_website
           mkdir -p secureops_website
         scp: |-
-            "./build/" => "/usr/share/nginx/html"
+          "./Dockerfile" => "secureops_website"
+          "./build" => "secureops_website"
+          "./default.conf" => "secureops_website"
         last_ssh: |-
           cd secureops_website
           sudo docker stop secureops_website || true
