@@ -4,4 +4,6 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 COPY /build .
 COPY /default.conf /etc/nginx/conf.d/
+COPY /fullchain.pem /etc/nginx/conf.d/
+COPY /privkey.pem /etc/nginx/conf.d/
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
