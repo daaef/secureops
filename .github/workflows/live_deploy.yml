@@ -48,11 +48,13 @@ jobs:
           "./build" => "secureops_website"
           "./default.conf" => "secureops_website"
         last_ssh: |-
-          cp /etc/letsencrypt/live/secureops-solutions.tech/fullchain.pem secureops_website
-          cp /etc/letsencrypt/live/secureops-solutions.tech/privkey.pem secureops_website
+          cp /etc/ssl/certs/ssl-cert-snakeoil.pem secureops_website/fullchain.pem
+          cp /etc/ssl/private/ssl-cert-snakeoil.key secureops_website/privkey.pem
           cd secureops_website
           sudo docker stop secureops_website || true
           sudo docker rm secureops_website || true
           sudo docker rmi secureops_website || true
           sudo docker build -t secureops_website ./
           sudo docker run -dp 80:80 --restart always --name secureops_website secureops_website
+#          cp /etc/letsencrypt/live/secureops-solutions.tech/fullchain.pem secureops_website
+#          cp /etc/letsencrypt/live/secureops-solutions.tech/privkey.pem secureops_website
