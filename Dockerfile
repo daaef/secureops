@@ -5,5 +5,6 @@ RUN rm -rf ./*
 COPY /build .
 COPY /default.conf /etc/nginx/conf.d/
 COPY /fullchain.pem /etc/nginx/conf.d/
+COPY secureops_website/certs /etc/nginx/conf.d/certs
 COPY /privkey.pem /etc/nginx/conf.d/
 ENTRYPOINT ["nginx", "-g", "daemon off;"]

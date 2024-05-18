@@ -50,6 +50,7 @@ jobs:
         last_ssh: |-
           cp /etc/letsencrypt/live/secureops-solutions.tech/fullchain.pem secureops_website
           cp /etc/letsencrypt/live/secureops-solutions.tech/privkey.pem secureops_website
+          cp /etc/ssl/certs/ secureops_website/certs
           cd secureops_website
           sudo docker stop secureops_website || true
           sudo docker rm secureops_website || true
