@@ -56,4 +56,4 @@ jobs:
           sudo docker rm secureops_website || true
           sudo docker rmi secureops_website || true
           sudo docker build -t secureops_website ./
-          sudo docker run -d -p 8080:8080 --restart un --name secureops_website secureops_website
+          sudo docker run -d -p 8080:8080 --restart unless-stopped --name secureops_website secureops_website
