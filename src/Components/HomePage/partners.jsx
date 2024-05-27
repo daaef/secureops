@@ -1,5 +1,4 @@
 import React from "react";
-import check from "../../Assets/images/check.png";
 import scale from "../../Assets/images/scale.png";
 import collab from "../../Assets/images/collab.png";
 import data from "../../Assets/images/data.png";
@@ -10,7 +9,7 @@ import flex from "../../Assets/images/flex.png";
 
 const Partners = () => {
   const arr = [
-    {
+  {
       title: "Efficiency & Scalability",
       icon: scale,
     },

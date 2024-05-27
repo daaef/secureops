@@ -8,21 +8,21 @@ const Services = () => {
   const serviceList = [
     {
       icon: btn1,
-      title: "DevOps integration & development",
+      title: "DevOps Integration & development",
       content:
-        "Elevate your services with DevOps integration. We optimize automation and collaboration to enhance your business processes",
-    },
-    {
-      icon: btn2,
-      title: "Cloud migration & optimizing",
-      content:
-        "Seamlessly transition to the cloud and maximize resource efficiency with our cloud optimization services. Experience the benefits of scalability and cost-effectiveness. ",
+        "Elevate your services with DevOps integration. We optimize automation and collaboration to enhance your business processes.",
     },
     {
       icon: btn3,
       title: "Consultancy",
       content:
         "Need help getting started? We provide tailored guidance and solutions to drive efficient and more reliable workflow.",
+    },
+    {
+      icon: btn2,
+      title: "Cloud migration & optimizing",
+      content:
+          "Seamlessly transition to the cloud and maximize resource efficiency with our cloud optimization services. Experience the benefits of scalability and cost-effectiveness.",
     },
     {
       icon: btn4,
