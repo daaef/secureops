@@ -13,7 +13,7 @@ const About = () => {
       <Hero />
       <WhoWeAre />
       <CoreValues />
-      <WhyChooseUs />
+      {/*<WhyChooseUs />*/}
       <Ctx />
     </div>
   );
