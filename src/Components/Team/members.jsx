@@ -74,8 +74,8 @@ const Members = () => {
             img: abel,
         },
         {
-            name: "Michael Abel",
-            title: "Full Stack and DevOps Engineer",
+            name: "Afekhide",
+            title: "Frontend Engineer",
             details: {
                 p1: "Afekhide is an experienced frontend engineer with a passion for solving everyday problems through innovative solutions. With about 6 years of experience as a Software Developer, he has honed his logical reasoning and collaboration skills, and enjoys working with teams. He has contributed to various projects for organizations such as nhub Nigeria, Logical Address, Airforce Nigeria, and PayAfrik.",
                 p2: "",
