@@ -8,7 +8,7 @@ const SingleMember = ({ img, name, title, details: { p1, p2 } }) => {
       onMouseEnter={() => setIsDetailsShown(true)}
       onMouseLeave={() => setIsDetailsShown(false)}
     >
-       <img className='rounded-md w-full' src={img} alt={name} />
+       {/*<img className='rounded-md w-full' src={img} alt={name} />*/}
       <div className='p-2'>
         <h2 className='font-bold text-[28px] text-gray-800'>{name}</h2>
         <h2 className='text-[22px] text-gray-500'>{title}</h2>
