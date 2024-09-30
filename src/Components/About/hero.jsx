@@ -6,7 +6,7 @@ const Hero = () => {
             <div className='bg-[#E8F1FB80] p-8 max-w-lg w-full text-center shadow-2xl shadow-sky-100 z-10'>
                 <h2 className='font-bold text-3xl'>About Us</h2>
                 <p className='text-sm mt-3 text-[#636363]'>
-                    We re an international cutting edge software solution provider, with focus on security
+                    We are an international cutting edge software solution provider, with focus on security
                     What sets us apart is our passion to empower organizations by providing the right solutions with ai
                     needed to strive in this digital age.
                     We are not just another tech company, we are you trusted partner to a secure and efficient development.
