@@ -29,6 +29,18 @@ const Members = () => {
             img: ben,
         },
         {
+            name: "Engineer Aileme Unuigbe",
+            title: "Director",
+            details: {
+                p1: "Engineer Unuigbe has over 30 years of experience in Structural/Civil Engineering, and he is an alumnus of the prestigious University of Lagos, where he obtained a Master of Engineering degree.",
+                p2: "He has led project teams, including the development of residential buildings, commercial & industrial building facilities, transportation infrastructure, and Construction Support Services. His business practice spans engineering design concerns and public infrastructure development and operations.",
+                p3: "He is actively involved in policymaking and the development of engineering practice regulations with professional bodies and industry practitioners.  He is a member of several professional organizations in Nigeria and internationally.",
+                p4: "He supports building industry contractors on several projects as a peer/design review and construction review engineer for construct-ability consideration.",
+                p5: "Engr. Unuigbe has been a captain to several businesses, and he brings his wealth of experience in the corporate business sector to SecureOps Solutions Limited. His specialty business includes engineering consulting, infrastructure development, and practice framework legislation.",
+            },
+            img: abel,
+        },
+        {
             name: "Adeyinka Popoola",
             title: "Software Architect",
             details: {
@@ -74,7 +86,7 @@ const Members = () => {
             img: abel,
         },
         {
-            name: "Afekhide",
+            name: "Afekhide Bot Gbadamosi",
             title: "Frontend Engineer",
             details: {
                 p1: "Afekhide is an experienced frontend engineer with a passion for solving everyday problems through innovative solutions. With about 6 years of experience as a Software Developer, he has honed his logical reasoning and collaboration skills, and enjoys working with teams. He has contributed to various projects for organizations such as nhub Nigeria, Logical Address, Airforce Nigeria, and PayAfrik.",
