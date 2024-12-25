@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const SingleMember = ({ img, name, title, details: { p1, p2 } }) => {
+const SingleMember = ({ img, name, title, details }) => {
   const [isDetailsShown, setIsDetailsShown] = useState(false);
 
   return (
@@ -19,8 +19,9 @@ const SingleMember = ({ img, name, title, details: { p1, p2 } }) => {
           isDetailsShown ? "visible-details" : "hidden-details"
         }`}
       >
-        <p className='text-sm'>{p1}</p>
-        <p className='text-sm'>{p2}</p>
+        {Object.entries(details).map(([key, value]) => (
+          <p key={key} className='text-sm'>{value}</p>
+        ))}
       </div>
     </div>
   );
