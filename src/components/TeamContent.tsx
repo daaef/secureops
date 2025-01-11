@@ -48,7 +48,19 @@ function Modal({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => 
   )
 }
 
-function TeamMember({ name, role, image, bio, onClick }: { name: string; role: string; image: any; bio: string; onClick: () => void }) {
+function TeamMember({
+  name,
+  role,
+  image,
+  bio,
+  onClick,
+}: {
+  name: string
+  role: string
+  image: any
+  bio: {}
+  onClick: () => void
+}) {
   return (
     <div className="group relative overflow-hidden rounded-3xl bg-primary-100">
       {image && (
@@ -56,8 +68,8 @@ function TeamMember({ name, role, image, bio, onClick }: { name: string; role: s
           alt=""
           {...image}
           className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-        />)
-      }
+        />
+      )}
       <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-t from-black to-black/0 to-60% p-6">
         <p className="font-display text-base/6 font-semibold tracking-wide text-white">
           {name}
@@ -172,7 +184,9 @@ const team = [
 export default function TeamList() {
   const [activeMember, setActiveMember] = useState<{
     name: string
-    bio: string
+    bio: {},
+    image: '',
+    role: string
   } | null>(null)
 
   return (
@@ -192,16 +206,23 @@ export default function TeamList() {
                   role="list"
                   className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8"
                 >
-                  {group.people.map((person) => (
-                    <li key={person.name}>
-                      <FadeIn>
-                        <TeamMember
-                          {...person}
-                          onClick={() => setActiveMember(person)}
-                        />
-                      </FadeIn>
-                    </li>
-                  ))}
+                  {group.people.map(
+                    (person: {
+                      name: string
+                      role: string
+                      image: any
+                      bio: {}
+                    }) => (
+                      <li key={person.name}>
+                        <FadeIn>
+                          <TeamMember
+                            {...person}
+                            onClick={() => setActiveMember(person)}
+                          />
+                        </FadeIn>
+                      </li>
+                    ),
+                  )}
                 </ul>
               </div>
             </div>
@@ -215,8 +236,8 @@ export default function TeamList() {
             <div className="flex">
               <div className="w-1/3 pr-4">
                 <Image
-                  alt={activeMember.name}
-                  {...activeMember.image}
+                  alt={activeMember?.name}
+                  src={activeMember.image}
                   className="rounded-lg"
                 />
                 <h2 className="mt-4 text-lg font-semibold">
@@ -228,11 +249,11 @@ export default function TeamList() {
               </div>
               <div className="w-2/3 pl-4">
                 <h2 className="mt-4 text-lg font-semibold">
-                  {activeMember.name}'s Bio
+                  {`${activeMember.name}'s Bio`}
                 </h2>
                 {Object.entries(activeMember?.bio).map(([key, value]) => (
                   <p key={key} className="my-3 text-sm">
-                    {value}
+                    {value as ReactNode}
                   </p>
                 ))}
               </div>
