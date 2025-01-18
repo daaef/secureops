@@ -63,13 +63,6 @@ function TeamMember({
 }) {
   return (
     <div className="group relative overflow-hidden rounded-3xl bg-primary-100">
-      {image && (
-        <Image
-          alt=""
-          {...image}
-          className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-        />
-      )}
       <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-t from-black to-black/0 to-60% p-6">
         <p className="font-display text-base/6 font-semibold tracking-wide text-white">
           {name}
@@ -98,7 +91,7 @@ const team = [
       },
       {
         name: "Benson Olowomuke",
-        role: "CFO/Co-Founder",
+        role: "CTO/Co-Founder",
         bio: {
           p1: "Benson is a serial tech entrepreneur and a co-founder of SecureOps Solutions LLC with over 22 years in the technology industry. His experience spans across Enterprise and Service Providers Network Systems Infrastructure Designs, Testing and Security Operations.",
           p2: "As an Enterprise Architect, he has consulted for several U.S public and private organizations, and he holds several industry certifications including but not limited to AWS, Microsoft, Comptia, Aviatrix, and an active CCIE.",
