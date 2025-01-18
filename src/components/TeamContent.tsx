@@ -164,7 +164,7 @@ const team = [
         name: "Amina Rinret Gamaliel",
         role: "UI/UX Designer",
         bio: {
-          p1: "is a skilled Graphic Designer and UI/UX Designer with six years of experience. She began her career in graphic design, spending two years honing her craft before transitioning to UI/UX design, where she has excelled for the past four years, creating intuitive and impactful user experiences.",
+          p1: "Amina is a skilled Graphic Designer and UI/UX Designer with six years of experience. She began her career in graphic design, spending two years honing her craft before transitioning to UI/UX design, where she has excelled for the past four years, creating intuitive and impactful user experiences.",
           p2: "As an educator and mentor, Amina is dedicated to empowering the next generation of designers. At TechStylers, she doubles as a leader and mentor, teaching UI/UX design to inspire and equip women with the skills to thrive in the tech industry. Her work fosters growth and inclusivity, helping to bridge the gender gap in technology.",
           p3: "Driven by her passion for innovation, Amina is actively pursuing her ultimate goal of becoming a virtual reality designer, shaping the future of immersive and interactive experiences.",
         },
