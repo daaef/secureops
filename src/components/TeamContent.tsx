@@ -217,8 +217,8 @@ export default function TeamList() {
           onClose={() => setActiveMember(null)}
         >
           {activeMember && (
-            <div className="flex">
-              <div className="w-1/3 pr-4">
+            <div className="">
+              <div className="pr-4">
                 {/* <Image
                   alt={activeMember?.name}
                   src={activeMember.image}
@@ -231,10 +231,7 @@ export default function TeamList() {
                   {activeMember.role}
                 </p>
               </div>
-              <div className="w-2/3 pl-4">
-                <h2 className="mt-4 text-lg font-semibold">
-                  {`${activeMember.name}'s Bio`}
-                </h2>
+              <div>
                 {Object.entries(activeMember?.bio).map(([key, value]) => (
                   <p key={key} className="my-3 text-sm">
                     {value as ReactNode}
