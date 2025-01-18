@@ -63,13 +63,6 @@ function TeamMember({
 }) {
   return (
     <div className="group relative overflow-hidden rounded-3xl bg-primary-100">
-      {image && (
-        <Image
-          alt=""
-          {...image}
-          className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-        />
-      )}
       <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-t from-black to-black/0 to-60% p-6">
         <p className="font-display text-base/6 font-semibold tracking-wide text-white">
           {name}
@@ -148,15 +141,6 @@ const team = [
           p2: "Yet, his journey extends beyond the conventional, as Ibrahim ventures into the exhilarating world of XR (Extended Reality). His ambitious mission is to push the boundaries of immersive technology, where he endeavors to conjure enchanting interactions that transport individuals to uncharted realms, bringing the extraordinary closer to reality.",
         },
         image: IB,
-      },
-      {
-        name: "Robinson Simon",
-        role: "Software Architect",
-        bio: {
-          p1: "Simon is an experienced frontend developer with a proven track record of over three years, specializing in the creation of interactive and visually captivating web applications. His unwavering commitment to delivering seamless user experiences has been the cornerstone of his career in web development. ",
-          p2: "His relentless pursuit of staying at the forefront of the rapidly evolving frontend landscape has compelled him to adopt and master the latest technologies and industry best practices. Simon thrives in cross-functional team environments, where he excels at transforming conceptual ideas into meticulously crafted, user-centric solutions.",
-        },
-        image: chosen,
       },
       {
         name: "Michael Abel",
