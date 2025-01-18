@@ -91,7 +91,7 @@ const team = [
       },
       {
         name: "Benson Olowomuke",
-        role: "CFO/Co-Founder",
+        role: "CTO/Co-Founder",
         bio: {
           p1: "Benson is a serial tech entrepreneur and a co-founder of SecureOps Solutions LLC with over 22 years in the technology industry. His experience spans across Enterprise and Service Providers Network Systems Infrastructure Designs, Testing and Security Operations.",
           p2: "As an Enterprise Architect, he has consulted for several U.S public and private organizations, and he holds several industry certifications including but not limited to AWS, Microsoft, Comptia, Aviatrix, and an active CCIE.",
@@ -157,6 +157,16 @@ const team = [
         bio: {
           p1: "Afekhide is an experienced frontend engineer with a passion for solving everyday problems through innovative solutions. With about 6 years of experience as a Software Developer, he has honed his logical reasoning and collaboration skills, and enjoys working with teams. He has contributed to various projects for organizations such as nhub Nigeria, Logical Address, Airforce Nigeria, and PayAfrik.",
           p2: "",
+        },
+        image: bot,
+      },
+      {
+        name: "Amina Rinret Gamaliel",
+        role: "UI/UX Designer",
+        bio: {
+          p1: "is a skilled Graphic Designer and UI/UX Designer with six years of experience. She began her career in graphic design, spending two years honing her craft before transitioning to UI/UX design, where she has excelled for the past four years, creating intuitive and impactful user experiences.",
+          p2: "As an educator and mentor, Amina is dedicated to empowering the next generation of designers. At TechStylers, she doubles as a leader and mentor, teaching UI/UX design to inspire and equip women with the skills to thrive in the tech industry. Her work fosters growth and inclusivity, helping to bridge the gender gap in technology.",
+          p3: "Driven by her passion for innovation, Amina is actively pursuing her ultimate goal of becoming a virtual reality designer, shaping the future of immersive and interactive experiences.",
         },
         image: bot,
       },
