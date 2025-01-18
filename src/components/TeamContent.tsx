@@ -51,19 +51,19 @@ function Modal({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => 
 function TeamMember({
   name,
   role,
-  image,
+  // image,
   bio,
   onClick,
 }: {
   name: string
   role: string
-  image: any
+  // image: any
   bio: {}
   onClick: () => void
 }) {
   return (
     <div className="group relative overflow-hidden rounded-3xl bg-primary-100">
-      <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-t from-black to-black/0 to-60% p-6">
+      <div className="relative inset-0 flex flex-col items-start justify-end bg-gradient-to-t from-primary-800 to-primary-800/60 to-90% p-6">
         <p className="font-display text-base/6 font-semibold tracking-wide text-white">
           {name}
         </p>
@@ -169,7 +169,7 @@ export default function TeamList() {
   const [activeMember, setActiveMember] = useState<{
     name: string
     bio: {},
-    image: '',
+    // image: '',
     role: string
   } | null>(null)
 
@@ -194,7 +194,7 @@ export default function TeamList() {
                     (person: {
                       name: string
                       role: string
-                      image: any
+                      // image: any
                       bio: {}
                     }) => (
                       <li key={person.name}>
@@ -219,11 +219,11 @@ export default function TeamList() {
           {activeMember && (
             <div className="flex">
               <div className="w-1/3 pr-4">
-                <Image
+                {/* <Image
                   alt={activeMember?.name}
                   src={activeMember.image}
                   className="rounded-lg"
-                />
+                /> */}
                 <h2 className="mt-4 text-lg font-semibold">
                   {activeMember.name}
                 </h2>
