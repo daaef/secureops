@@ -51,19 +51,19 @@ function Modal({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => 
 function TeamMember({
   name,
   role,
-  image,
+  // image,
   bio,
   onClick,
 }: {
   name: string
   role: string
-  image: any
+  // image: any
   bio: {}
   onClick: () => void
 }) {
   return (
     <div className="group relative overflow-hidden rounded-3xl bg-primary-100">
-      <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-t from-black to-black/0 to-60% p-6">
+      <div className="relative inset-0 flex flex-col items-start justify-end bg-gradient-to-t from-primary-800 to-primary-800/60 to-90% p-6">
         <p className="font-display text-base/6 font-semibold tracking-wide text-white">
           {name}
         </p>
@@ -143,15 +143,6 @@ const team = [
         image: IB,
       },
       {
-        name: "Robinson Simon",
-        role: "Software Architect",
-        bio: {
-          p1: "Simon is an experienced frontend developer with a proven track record of over three years, specializing in the creation of interactive and visually captivating web applications. His unwavering commitment to delivering seamless user experiences has been the cornerstone of his career in web development. ",
-          p2: "His relentless pursuit of staying at the forefront of the rapidly evolving frontend landscape has compelled him to adopt and master the latest technologies and industry best practices. Simon thrives in cross-functional team environments, where he excels at transforming conceptual ideas into meticulously crafted, user-centric solutions.",
-        },
-        image: chosen,
-      },
-      {
         name: "Michael Abel",
         role: "Full Stack and DevOps Engineer",
         bio: {
@@ -169,6 +160,16 @@ const team = [
         },
         image: bot,
       },
+      {
+        name: "Amina Rinret Gamaliel",
+        role: "UI/UX Designer",
+        bio: {
+          p1: "Amina is a skilled Graphic Designer and UI/UX Designer with six years of experience. She began her career in graphic design, spending two years honing her craft before transitioning to UI/UX design, where she has excelled for the past four years, creating intuitive and impactful user experiences.",
+          p2: "As an educator and mentor, Amina is dedicated to empowering the next generation of designers. At TechStylers, she doubles as a leader and mentor, teaching UI/UX design to inspire and equip women with the skills to thrive in the tech industry. Her work fosters growth and inclusivity, helping to bridge the gender gap in technology.",
+          p3: "Driven by her passion for innovation, Amina is actively pursuing her ultimate goal of becoming a virtual reality designer, shaping the future of immersive and interactive experiences.",
+        },
+        image: bot,
+      },
     ],
   },
 ]
@@ -178,7 +179,7 @@ export default function TeamList() {
   const [activeMember, setActiveMember] = useState<{
     name: string
     bio: {},
-    image: '',
+    // image: '',
     role: string
   } | null>(null)
 
@@ -203,7 +204,7 @@ export default function TeamList() {
                     (person: {
                       name: string
                       role: string
-                      image: any
+                      // image: any
                       bio: {}
                     }) => (
                       <li key={person.name}>
@@ -226,13 +227,13 @@ export default function TeamList() {
           onClose={() => setActiveMember(null)}
         >
           {activeMember && (
-            <div className="flex">
-              <div className="w-1/3 pr-4">
-                <Image
+            <div className="">
+              <div className="pr-4">
+                {/* <Image
                   alt={activeMember?.name}
                   src={activeMember.image}
                   className="rounded-lg"
-                />
+                /> */}
                 <h2 className="mt-4 text-lg font-semibold">
                   {activeMember.name}
                 </h2>
@@ -240,10 +241,7 @@ export default function TeamList() {
                   {activeMember.role}
                 </p>
               </div>
-              <div className="w-2/3 pl-4">
-                <h2 className="mt-4 text-lg font-semibold">
-                  {`${activeMember.name}'s Bio`}
-                </h2>
+              <div>
                 {Object.entries(activeMember?.bio).map(([key, value]) => (
                   <p key={key} className="my-3 text-sm">
                     {value as ReactNode}
