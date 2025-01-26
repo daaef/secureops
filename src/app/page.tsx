@@ -167,7 +167,7 @@ function Services() {
               solutions curated to scale your business immensely.
             </ListItem>
             <ListItem>
-              <Link href={'/work'}>View All Services</Link>
+              <Link href={'/services'}>View All Services</Link>
             </ListItem>
           </List>
         </div>
@@ -177,6 +177,7 @@ function Services() {
 }
 
 export const metadata: Metadata = {
+  title: 'SecureOps Solutions Technology',
   description:
     'At secure ops, we empower you by building efficient scalable solutions tailored to meet your needs.',
 }
