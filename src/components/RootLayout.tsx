@@ -138,13 +138,13 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/team">Our Team</NavigationItem>
+        <NavigationItem href="/services">Our Services</NavigationItem>
         <NavigationItem href="/about">About Us</NavigationItem>
       </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/services">Our Services</NavigationItem>
+      {/* <NavigationRow>
         <NavigationItem href="/blog">Blog</NavigationItem>
-      </NavigationRow>
+        <NavigationItem href="/team">Our Team</NavigationItem>
+      </NavigationRow> */}
     </nav>
   )
 }

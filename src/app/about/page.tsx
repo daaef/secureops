@@ -10,6 +10,7 @@ import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { loadArticles } from '@/lib/mdx'
+import TeamContent from '@/components/TeamContent'
 
 function Culture() {
   return (
@@ -83,13 +84,22 @@ export default async function About() {
 
       <Culture />
 
+      <PageIntro eyebrow="Our Team" title="Meet the Experts Behind Our Success">
+        <p>
+          Our diverse and experienced team members bring a wealth of knowledge
+          and skills to ensure the success of your projects.
+        </p>
+      </PageIntro>
 
-      <PageLinks
+      <TeamContent />
+
+
+      {/* <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
         intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
         pages={blogArticles}
-      />
+      /> */}
 
       <ContactSection />
     </>
