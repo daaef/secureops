@@ -116,6 +116,17 @@ const team = [
     title: 'Team',
     people: [
       {
+        name: "Toluwalola Adeyemi",
+        role: "Business Analyst",
+        bio: {
+          p1: "Toluwalola Adeyemi is a dynamic professional with expertise spanning Business Analysis, Project Management, and Executive Assistance. With a proven track record of delivering results, Toluwalola specializes in transforming complex challenges into innovative solutions that drive organizational success. She is an alumna of the University of Hertfordshire.",
+          p2: "Business Analysis: She thrives on digging into data and uncovering insights that drive smart decisions. Whether it’s refining workflows or identifying growth opportunities, Toluwalola enjoys turning complex challenges into clear, actionable solutions.",
+          p3: "Project Management: Toluwalola is passionate about bringing ideas to life. Managing teams, timelines, and resources to deliver projects on time and within scope is my forte, and she always aims to create an environment where everyone can succeed.",
+          p4: "Executive Assistance: She believes in making life easier for executives so they can focus on what matters most. From handling schedules to coordinating with stakeholders, Toluwalola ensures the details are covered with care and precision",
+        },
+        image: cerdo,
+      },
+      {
         name: "Adeyinka Popoola",
         role: "Software Architect",
         bio: {

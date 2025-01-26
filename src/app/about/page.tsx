@@ -26,19 +26,25 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Custromer focus" invert>
-            Our clientele is our heart. We center every solution on your unique needs, ensuring unparalleled customer satisfaction.
+          Our clients are at the core of everything we do. Every solution we craft is tailored to your unique needs, delivering exceptional satisfaction every step of the way.
           </GridListItem>
           <GridListItem title="Security" invert>
-            Security is the foundation of our services. At SecureOps, we prioritize the safety and privacy of your digital assets, ensuring that your data is bulletproof to threats and vulnerabilities.
+          Security lies at the heart of everything we do at SecureOps. We are committed to safeguarding your 
+digital assets with unwavering precision, ensuring your data remains resilient against threats and 
+vulnerabilities. Your trust drives our mission.
           </GridListItem>
           <GridListItem title="Transparency" invert>
-            We believe in openness and clarity. SecureOps commits to transparent processes, fostering trust and communication at every stage of our collaboration.
+          At SecureOps, openness and clarity are not just values—they’re our foundation. We are dedicated to 
+transparent processes that build trust, foster collaboration, and ensure seamless communication every step 
+of the way.
           </GridListItem>
           <GridListItem title="Integrity" invert>
-            Trust is an essential part of our partnership. SecureOps upholds the highest standards of integrity, ensuring honesty and reliability in all our interactions.
+          Trust is the cornerstone of every partnership we build at SecureOps. We are committed to upholding the 
+          highest standards of integrity, fostering honesty, reliability, and strong relationships in every interaction.
           </GridListItem>
           <GridListItem title="Colaboration" invert>
-            Together, we can achieve more. SecureOps considers collaboration as an essential factor in amplifying innovation and driving success.
+          Together, we achieve more. At SecureOps, collaboration is at the heart of amplifying innovation and 
+          driving success, empowering us to create meaningful impact through strong partnerships.
           </GridListItem>
         </GridList>
       </Container>
