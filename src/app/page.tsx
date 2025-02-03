@@ -122,30 +122,17 @@ export const metadata: Metadata = {
     'At secure ops, we empower you by building efficient scalable solutions tailored to meet your needs.',
 }
 
-export default async function Home() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: 'hello',
-    image: '/images/secureops-logo.png',
-    description: 'hello',
-  }
- 
+export default async function Home() { 
 
   return (
     <>
-    <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-primary-950 [text-wrap:balance] sm:text-7xl">
             Build Sustainable Solutions with SecureOps
           </h1>
           <p className="mt-6 text-xl text-primary-600">
-            At secure ops, we empower you by building efficient scalable
-            solutions tailored to meet your needs.
+            At secure ops, we empower you by building efficient scalable solutions tailored to meet your needs.
           </p>
         </FadeIn>
       </Container>

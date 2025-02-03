@@ -31,6 +31,7 @@ export default function Faq() {
         eyebrow="Frequently asked questions"
         title="Your Questions, Answered"
         className="mt-24 sm:mt-32 lg:mt-40"
+        id="faq"
       >
         <p>
           Find answers to the most common questions about our services and
