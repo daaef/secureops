@@ -7,7 +7,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Studio',
-    default: 'Build Sustainable Solutions with SecureOps',
+    default: 'Build Sustainable Solutions with SecureOps Solutions',
   },
 }
 
