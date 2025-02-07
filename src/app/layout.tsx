@@ -6,9 +6,11 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Studio',
+    template: '%s - SecureOPs Solutions',
     default: 'Build Sustainable Solutions with SecureOps Solutions',
   },
+  description:
+    'At secure ops, we empower you by building efficient scalable solutions tailored to meet your needs.',
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

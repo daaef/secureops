@@ -19,7 +19,7 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
-import { Logomark, Logo } from '@/components/Logo'
+import { Logomark, Logo, LogoLtd } from '@/components/Logo'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -60,6 +60,7 @@ function Header({
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
 
+  const [currentPage, setCurrentPage] = useState('LLC')
   return (
     <Container>
       <div className="flex items-center justify-between">
@@ -70,15 +71,17 @@ function Header({
           onMouseLeave={() => setLogoHovered(false)}
         >
           <Logomark invert={invert} filled={logoHovered} />
-          <Logo
-            invert={invert}
-            filled={logoHovered}
-          />
+          <Logo invert={invert} filled={logoHovered} />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
-            Contact us
-          </Button>
+          <Link
+            href="/ltd"
+            aria-label="Home-LTD"
+            onMouseEnter={() => setLogoHovered(true)}
+            onMouseLeave={() => setLogoHovered(false)}
+          >
+            <LogoLtd invert={invert} filled={logoHovered} />
+          </Link>
           <button
             ref={toggleRef}
             type="button"
@@ -141,10 +144,10 @@ function Navigation() {
         <NavigationItem href="/services">Our Services</NavigationItem>
         <NavigationItem href="/about">About Us</NavigationItem>
       </NavigationRow>
-      {/* <NavigationRow>
-        <NavigationItem href="/blog">Blog</NavigationItem>
-        <NavigationItem href="/team">Our Team</NavigationItem>
-      </NavigationRow> */}
+      <NavigationRow>
+        <NavigationItem href="/contact">Contact Us</NavigationItem>
+        {/*<NavigationItem href="/team">Our Team</NavigationItem>*/}
+      </NavigationRow>
     </nav>
   )
 }

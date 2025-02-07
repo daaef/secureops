@@ -109,7 +109,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-primary-700">
-            © © SecureOps Solutions LLC. {new Date().getFullYear()}
+            © SecureOps Solutions. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
