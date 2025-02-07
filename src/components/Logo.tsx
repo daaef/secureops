@@ -3,13 +3,15 @@ import LogoMain from '@/images/logo.png'
 import LogoWhite from '@/images/logo-w.png'
 import LogoMainLone from '@/images/logo-alone.png'
 import LogoWhiteLone from '@/images/logo-w-alone.png'
+import LogoLTD from '@/images/logo-ltd.png'
+import LogoLTDW from '@/images/logo-ltd-w.png'
 import Image from 'next/image'
 
 export function Logomark({
-  invert = false,
-  filled = false,
-  ...props
-}: React.ComponentPropsWithoutRef<'svg'> & {
+                           invert = false,
+                           filled = false,
+                           ...props
+                         }: React.ComponentPropsWithoutRef<'svg'> & {
   invert?: boolean
   filled?: boolean
 }) {
@@ -58,6 +60,34 @@ export function Logo({
       src={LogoMainLone}
       width={32}
       height={32}
+      alt="Logo"
+    />
+  )
+}
+
+export function LogoLtd({
+                           invert = false,
+                           filled = false,
+                           ...props
+                         }: React.ComponentPropsWithoutRef<'svg'> & {
+  invert?: boolean
+  filled?: boolean
+}) {
+  let id = useId()
+  return invert ? (
+    <Image
+      src={LogoLTDW}
+      className="hidden h-[32px] sm:block"
+      width={130}
+      height={42}
+      alt="Logo"
+    />
+  ) : (
+    <Image
+      src={LogoLTD}
+      className="hidden h-[32px] sm:block"
+      width={130}
+      height={42}
       alt="Logo"
     />
   )
