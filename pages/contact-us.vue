@@ -141,7 +141,7 @@
 // });
 
 const colorMode = useColorMode();
-
+useSeo('contact-us')
 onMounted(() => {
   colorMode.preference = 'light';
 })
@@ -160,7 +160,7 @@ async function handleSubmit() {
       body: formData
     })
     // Clear form on success
-    formData = {
+    formData.value = {
       name: '',
       email: '',
       company: '',

@@ -135,7 +135,7 @@ import {Motion} from 'motion-v';
 // });
 
 const colorMode = useColorMode();
-
+useSeo('services')
 onMounted(() => {
   colorMode.preference = 'light';
 })

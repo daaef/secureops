@@ -1,19 +1,11 @@
 <template>
-  <Hero />
-  <main class="font-display">
-    <Offers />
-    <Services />
-    <Faq />
-    <Contact />
-  </main>
-  <!-- Footer -->
-  <Footer />
+  <Hero/>
+  <Offers/>
+  <Services/>
+  <Faq/>
 </template>
 <script setup>
-// useSeoMeta({
-//   title: 'Build Sustainable Solutions with SecureOps Solutions',
-// });
-
+useSeo('index')
 const colorMode = useColorMode();
 
 onMounted(() => {

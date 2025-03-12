@@ -164,7 +164,7 @@
 // useSeoMeta({
 //   title: 'Build Sustainable Solutions with SecureOps Solutions',
 // });
-
+useSeo('about')
 const colorMode = useColorMode();
 
 onMounted(() => {

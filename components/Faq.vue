@@ -27,6 +27,26 @@ const faqs = [
   },
   // More questions...
 ]
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(faq => ( {
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    }
+  }))
+}
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify(jsonLd)
+    }
+  ]
+})
 </script>
 
 <template>

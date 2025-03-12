@@ -1,5 +1,3 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
+Sitemap: https://secureops-solutions.tech/sitemap.xml

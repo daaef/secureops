@@ -2,7 +2,6 @@
 
 <template>
   <header class="bg-white min-h-[70vh] relative overflow-hidden grid items-center pt-20">
-    <Navbar />
     <div class="container mx-auto font-display justify-start overflow-hidden p-8">
       <BoxReveal color="#163055">
         <p class="text-5xl font-medium text-[#163055] tracking-tight [text-wrap:balance] sm:text-7xl">

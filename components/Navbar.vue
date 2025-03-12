@@ -3,7 +3,6 @@ const navigation = [
   {name: 'About', href: '/about'},
   {name: 'Services', href: '/services'},
   {name: 'Contact', href: '/contact-us'},
-  {name: 'Blog', href: '/contact-us'},
 ]
 const mobileMenuOpen = ref(false)
 // Add these new refs
@@ -48,10 +47,11 @@ const handleScroll = () => {
       }
     ]" aria-label="Global">
       <div class="flex mx-auto container items-center justify-between p-6 lg:px-8">
-        <a href="#" class="-m-1.5 p-1.5">
+        <nuxt-link to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="/logo.png" alt=""/>
-        </a>
+          <img class="h-8 w-auto md:block hidden" src="/logo.png" alt=""/>
+          <img class="h-8 w-auto md:hidden block" src="/logo-alone.png" alt=""/>
+        </nuxt-link>
         <div class="flex lg:hidden">
           <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                   @click="mobileMenuOpen = true">
