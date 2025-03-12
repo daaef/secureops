@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --border: 200 75% 85%; /* Corresponding to shade 300 (#91d9ff) */
+    --input: 207 67% 94%; /* Corresponding to shade 100 (#daf1ff) */
+    --ring: 208 85% 65%; /* Corresponding to shade 500 (#38a4f9) */
+    --background: 210 25% 98%; /* Corresponding to shade 50 (#eff9ff) */
+    --foreground: 215 45% 25%; /* Corresponding to shade 950 (#163055) */
+    --primary: 208 85% 65%; /* Corresponding to shade 500 (#38a4f9) */
+    --primary-foreground: 210 25% 98%; /* Corresponding to shade 50 (#eff9ff) */
+    --secondary: 204 85% 75%; /* Corresponding to shade 400 (#5ec1fc) */
+    --secondary-foreground: 214 55% 40%; /* Corresponding to shade 900 (#1c4d8c) */
+    --destructive: 215 45% 25%; /* Corresponding to shade 950 (#163055) */
+    --destructive-foreground: 210 25% 98%; /* Corresponding to shade 50 (#eff9ff) */
+    --muted: 207 67% 94%; /* Corresponding to shade 100 (#daf1ff) */
+    --muted-foreground: 214 55% 40%; /* Corresponding to shade 900 (#1c4d8c) */
+    --accent: 200 75% 85%; /* Corresponding to shade 300 (#91d9ff) */
+    --accent-foreground: 214 55% 40%; /* Corresponding to shade 900 (#1c4d8c) */
+    --popover: 204 75% 90%; /* Corresponding to shade 200 (#bee7ff) */
+    --popover-foreground: 214 55% 40%; /* Corresponding to shade 900 (#1c4d8c) */
+    --card: 207 67% 94%; /* Corresponding to shade 100 (#daf1ff) */
+    --card-foreground: 214 55% 40%; /* Corresponding to shade 900 (#1c4d8c) */
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    font-weight: 200 900;
+    font-display: block;
+    font-style: normal;
+    font-stretch: 75% 125%;
+    src: url('../fonts/Mona-Sans.var.woff2') format('woff2');
+}

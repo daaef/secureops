@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SecureOPs.iml" filepath="$PROJECT_DIR$/.idea/SecureOPs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/secureOPs.iml" filepath="$PROJECT_DIR$/.idea/secureOPs.iml" />
     </modules>
   </component>
 </project>
