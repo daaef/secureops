@@ -1,5 +1,5 @@
 export const useSeo = (page: 'index' | 'about' | 'services' | 'contact-us') => {
-  const baseUrl = 'https://secureops.com'
+  const baseUrl = 'https://secureops-solutions.tech'
 
   const seoConfig = {
     index: {
