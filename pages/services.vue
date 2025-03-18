@@ -127,6 +127,7 @@
       </div>
     </div>
   </div>
+  <Faq/>
 </template>
 <script setup>
 import {Motion} from 'motion-v';

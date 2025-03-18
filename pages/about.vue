@@ -99,7 +99,7 @@
       </div>
     </div>
   </div>
-  <div class="mx-auto container px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+  <div class="mx-auto container px-6 mb-10 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
     <div class="mx-auto max-w-2xl lg:max-w-none">
       <div><h1><span
           class="block font-display text-base font-semibold text-primary-950">Our Team</span><span
@@ -126,12 +126,13 @@
               <div class="lg:col-span-3">
                 <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
                   <li v-for="team in group?.people" :key="team.name">
-                    <div>
+                    <div class="cursor-pointer" @click="setActiveMember(team)">
                       <div class="group relative overflow-hidden rounded-3xl bg-primary-100">
                         <div
                             class="relative inset-0 text-center flex flex-col items-stretch justify-end bg-gradient-to-t from-[#1c5ab1] to-[#1c5ab1]/60 to-90% p-6">
                           <div class="text-center">
-                            <span :class="`text-white text-[100px] font-serif font-medium ${i === 0 ? 'uppercase' : 'lowercase text-5xl'}`" v-for="(name, i) in team?.name?.split(' ')"
+                            <span :class="`text-white text-[100px] font-serif font-medium`"
+                                  v-for="(name, i) in team?.name?.split(' ')"
                                   :key="i">
                               {{ name.charAt(0) }}
                             </span>
@@ -148,17 +149,39 @@
               </div>
             </div>
           </div>
-          <div class="fixed inset-0 z-50 max-w-4xl mx-auto flex items-center justify-center hidden">
-            <div class="fixed inset-0 bg-black transition-opacity duration-300 opacity-0"></div>
-            <div
-                class="p-6 rounded-lg shadow-lg bg-primary-950 text-primary-200 z-10 transition-transform duration-300 opacity-0 translate-y-4">
-              <button class="mt-4 text-sm text-blue-200 font-medium">Close</button>
-            </div>
-          </div>
+          <UModal v-model="isOpen">
+            <UCard>
+
+              <div class="">
+                <div class="pr-4">
+                  <div
+                      class="relative inset-0 text-center inline-flex items-stretch justify-end bg-gradient-to-t from-[#1c5ab1] rounded-[23px] to-[#1c5ab1]/60 to-90% p-6">
+                            <span :class="`text-white text-[100px] font-serif font-medium`"
+                                  v-for="(name, i) in activeMember?.name?.split(' ')"
+                                  :key="i">
+                              {{ name.charAt(0) }}
+                            </span>
+                  </div>
+                  <h2 class="mt-4 text-lg font-semibold text-[#163055]">
+                    {{ activeMember.name }}
+                  </h2>
+                  <p class="mt-2 text-sm text-[#1c5ab1]">
+                    {{ activeMember.role }}
+                  </p>
+                </div>
+                <div>
+                  <p v-for="[key, val] in Object.entries(activeMember?.bio)"  :key="key" class="my-3 text-sm text-[#1c5ab1]">
+                    {{ val }}
+                  </p>
+                </div>
+              </div>
+            </UCard>
+          </UModal>
         </div>
       </div>
     </div>
   </div>
+  <Faq/>
 </template>
 <script setup>
 // useSeoMeta({
@@ -170,7 +193,19 @@ const colorMode = useColorMode();
 onMounted(() => {
   colorMode.preference = 'light';
 })
+const isOpen = ref(false)
 
+const activeMember = ref({
+  name: '',
+  bio: {},
+  // image: '',
+  role: ''
+});
+
+const setActiveMember = (member) => {
+  activeMember.value = member;
+  isOpen.value = true;
+}
 const team = [
   {
     title: 'Leadership',

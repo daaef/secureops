@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import {useStore} from "~/store";
+
+const store = useStore()
+
+const { ltd } = storeToRefs(store)
+
+const onClickLtd = () =>  ltd.value = !ltd.value
 const footerNavigation = {
   connect: [
     {name: 'Instagram', href: '#'},
@@ -8,7 +15,7 @@ const footerNavigation = {
   company: [
     {name: 'About', href: '/about'},
     {name: 'Services', href: 'services'},
-    {name: 'Blog', href: '#'},
+    // {name: 'Blog', href: '#'},
     {name: 'Contact us', href: '/contact-us'},
   ],
 }
@@ -18,8 +25,14 @@ const footerNavigation = {
   <footer class="relative font-display mx-auto mt-32 container px-6 lg:px-8">
     <div class="border-t border-gray-900/10 py-16 sm:py-24 lg:py-32">
       <div class="xl:flex xl:justify-between xl:gap-8">
-        <img class="h-9" src="/logo.png"
-             alt="Company name"/>
+        <nuxt-link to="/ltd" v-if="ltd">
+          <img class="h-9" src="/logo-ltd.png"
+               alt="SecureOps Solutions LTD"/>
+        </nuxt-link>
+        <nuxt-link to="/" v-else>
+          <img class="h-9" src="/logo.png"
+               alt="SecureOps Solutions LLC"/>
+        </nuxt-link>
         <div class="mt-16 grid grid-cols-2 gap-8 xl:w-[30%] xl:mt-0">
           <div>
             <h3 class="text-sm/6 font-semibold text-gray-900">Solutions</h3>

@@ -14,7 +14,13 @@ export default defineNuxtConfig({
             enabled: true
         }
     },
-    modules: ['@nuxt/ui', '@nuxtjs/sitemap', '@nuxtjs/robots'],
+    modules: [
+      '@nuxt/ui',
+      '@nuxtjs/sitemap',
+      '@nuxtjs/robots',
+      '@pinia/nuxt',
+      'pinia-plugin-persistedstate'
+    ],
     colorMode: {
         classSuffix: '',
         preference: 'light'

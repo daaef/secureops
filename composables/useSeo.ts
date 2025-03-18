@@ -1,4 +1,4 @@
-export const useSeo = (page: 'index' | 'about' | 'services' | 'contact-us') => {
+export const useSeo = (page: 'index' | 'ltd' | 'about' | 'services' | 'contact-us' | 'trainings') => {
   const baseUrl = 'https://secureops-solutions.tech'
 
   const seoConfig = {
@@ -6,6 +6,11 @@ export const useSeo = (page: 'index' | 'about' | 'services' | 'contact-us') => {
       title: 'SecureOps Solutions - Enterprise Security & Operations',
       description: 'Build sustainable security solutions with SecureOps. We deliver enterprise-grade security and operations solutions focused on sustainable business growth.',
       path: '/'
+    },
+    ltd: {
+      title: 'SecureOps Solutions LTD - Enterprise Security & Operations',
+      description: 'Build sustainable security solutions with SecureOps. We deliver enterprise-grade security and operations solutions focused on sustainable business growth.',
+      path: '/ltd'
     },
     about: {
       title: 'About SecureOps Solutions | Our Mission & Vision',
@@ -21,6 +26,11 @@ export const useSeo = (page: 'index' | 'about' | 'services' | 'contact-us') => {
       title: 'Contact SecureOps Solutions - Get In Touch',
       description: 'Ready to enhance your security posture? Contact SecureOps Solutions for expert consultation and solutions tailored to your business needs.',
       path: '/contact-us'
+    },
+    trainings: {
+      title: 'Professional Training Programs | SecureOps Solutions',
+      description: 'Enhance your skills with SecureOps Solutions professional training programs. From Cyber Security to AI, we offer comprehensive courses for career advancement.',
+      path: '/trainings'
     }
   }
 
