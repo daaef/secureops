@@ -9,6 +9,7 @@ console.log('ltd', ltd.value);
 const navigation = [
   {name: 'About', href: '/about'},
   {name: 'Services', href: '/services'},
+  {name: 'Trainings', href: '/trainings'},
   {name: 'Contact', href: '/contact-us'},
 ]
 const mobileMenuOpen = ref(false)
@@ -35,11 +36,7 @@ const handleScroll = () => {
   // Determine scroll direction and visibility
   if (currentScrollPosition < 2) return
 
-  if (currentScrollPosition > lastScrollPosition.value) {
-    isNavVisible.value = false // Scrolling down
-  } else {
-    isNavVisible.value = true // Scrolling up
-  }
+  isNavVisible.value = currentScrollPosition <= lastScrollPosition.value;
 
   lastScrollPosition.value = currentScrollPosition
 }
