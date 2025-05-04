@@ -8,9 +8,10 @@ const { ltd } = storeToRefs(store)
 const onClickLtd = () =>  ltd.value = !ltd.value
 const footerNavigation = {
   connect: [
-    {name: 'Instagram', href: '#'},
-    {name: 'Twitter/X', href: '#'},
-    {name: 'LinkedIn', href: '#'},
+    {name: 'Instagram', href: 'https://www.instagram.com/secureopssolutionsllc?igsh=ZnN2eDFtcTUzcGdv'},
+    {name: 'Twitter/X', href: 'https://x.com/Secureopsllc?s=09'},
+    {name: 'LinkedIn', href: 'https://www.linkedin.com/company/secureops-solutions-llc'},
+    {name: 'YouTube', href: 'https://youtube.com/@secureopssolutionsllc'},
   ],
   company: [
     {name: 'About', href: '/about'},
@@ -47,7 +48,9 @@ const footerNavigation = {
             <h3 class="text-sm/6 font-semibold text-gray-900">Support</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li v-for="item in footerNavigation.connect" :key="item.name">
-                <a :href="item.href" class="text-sm/6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+                <a :href="item.href" class="text-sm/6 text-gray-600 hover:text-gray-900" target="_blank">
+                  {{ item.name }}
+                </a>
               </li>
             </ul>
           </div>
